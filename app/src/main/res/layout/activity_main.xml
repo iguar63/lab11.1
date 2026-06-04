@@ -80,7 +80,8 @@
         <TextView
             android:id="@+id/ch"
             android:text="Сумма чаевых"
-            android:textSize="17dp"/>
+            android:textSize="17dp"
+            />
         <TextView
             android:id="@+id/summ"
             android:text="Общая сумма"

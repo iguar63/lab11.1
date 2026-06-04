@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.transition.Visibility
 import com.example.lab11.databinding.ActivityMainBinding
+import kotlin.math.sqrt
 import kotlin.properties.Delegates.notNull
 
 
@@ -52,6 +53,7 @@ class MainActivity : AppCompatActivity() {
     private fun blij() = with(binding) {
         var rasch = sum.toString().toDouble() - sum.toString().toInt()
         var ocr = 0.0
+        rasch = sqrt(rasch * rasch)
         if(rasch >= 0.5){
             var rasch = sum.toString().toDouble() - sum.toString().toInt()
             var plus = 1 - rasch
@@ -70,6 +72,7 @@ class MainActivity : AppCompatActivity() {
     }
     private fun bolsh() = with(binding) {
         var rasch = sum.toString().toDouble() - sum.toString().toInt()
+        rasch = sqrt(rasch * rasch)
         var plus = 1 - rasch
         var ocr = plus - sum.toString().toDouble()
 
@@ -83,6 +86,7 @@ class MainActivity : AppCompatActivity() {
     }
     private fun mensh() = with(binding) {
         var rasch = sum.toString().toDouble() - sum.toString().toInt()
+        rasch = sqrt(rasch * rasch)
         var ocr = rasch - sum.toString().toDouble()
 
         var chi = ocr*(cha*0.01)
